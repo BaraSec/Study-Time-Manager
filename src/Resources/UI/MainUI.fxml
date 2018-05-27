@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="531.0" prefWidth="554.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.MainController">
+   <children>
+      <JFXButton fx:id="solve" layoutX="305.0" layoutY="106.0" onAction="#solve" style="-fx-background-color: #3f3636;" text="Solve" textFill="WHITE" />
+      <Label layoutX="192.0" layoutY="110.0" prefHeight="17.0" prefWidth="108.0" text="Solve the problem:" />
+      <Label layoutX="188.0" layoutY="12.0" text="Study Time Manager" textFill="#610505">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+         <effect>
+            <Reflection />
+         </effect>
+      </Label>
+      <TableView fx:id="table" layoutX="9.0" layoutY="161.0" prefHeight="210.0" prefWidth="546.0">
+         <effect>
+            <InnerShadow blurType="TWO_PASS_BOX" />
+         </effect>
+      </TableView>
+      <Label layoutX="141.0" layoutY="431.0" text="Maximum hours available:" />
+      <JFXTextField fx:id="maxH" editable="false" layoutX="304.0" layoutY="425.0" prefHeight="25.0" prefWidth="153.0" />
+      <JFXButton layoutX="304.0" layoutY="73.0" onAction="#open" style="-fx-background-color: #3f3636;" text="Open" textFill="WHITE" />
+      <Label layoutX="192.0" layoutY="77.0" prefHeight="17.0" prefWidth="108.0" text="Open projects' file:" />
+      <JFXButton layoutX="512.0" layoutY="509.0" onAction="#close" style="-fx-background-color: #3f3636;" text="close" textFill="WHITE" />
+      <Label layoutX="142.0" layoutY="463.0" text="Overall percentage achieved:" />
+      <JFXTextField fx:id="oPerc" editable="false" layoutX="304.0" layoutY="455.0" prefHeight="25.0" prefWidth="153.0" />
+      <Label layoutX="141.0" layoutY="400.0" text="Hours needed:" />
+      <JFXTextField fx:id="hrsNeed" editable="false" layoutX="303.0" layoutY="394.0" prefHeight="25.0" prefWidth="153.0" />
+      <TextField fx:id="status" alignment="CENTER" editable="false" layoutX="184.0" layoutY="510.0" prefHeight="25.0" prefWidth="222.0" text="Status" />
+   </children>
+</AnchorPane>
